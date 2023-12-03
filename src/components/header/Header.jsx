@@ -15,7 +15,7 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import PropTypes from "prop-types"
 
-const Header = ({type}) => {
+const Header = ({ type }) => {
 	const [openState, setOpenState] = useState(false);
 	const [openOption, setOpenOption] = useState(false);
 
@@ -78,7 +78,7 @@ const Header = ({type}) => {
 						<button className="headerBtn">Sign in / Register</button>
 						<div className="headerSearch">
 							<div className="headerSearchItem">
-								<FontAwesomeIcon icon={faBed} className="headerIcon" />
+								<FontAwesomeIcon icon={faBed} className="headerIcon" onClick={() => setOpenState(!openState)} />
 								<input
 									type="text"
 									placeholder="Where are you going?"
@@ -89,6 +89,7 @@ const Header = ({type}) => {
 								<FontAwesomeIcon
 									icon={faCalendarDays}
 									className="headerIcon"
+									onClick={() => setOpenState(!openState)}
 								/>
 								<span
 									className="headerSearchText"
@@ -112,6 +113,7 @@ const Header = ({type}) => {
 								<FontAwesomeIcon
 									icon={faPerson}
 									className="headerIcon"
+									onClick={() => setOpenState(!openState)}
 								/>
 								<span
 									className="headerSearchText"
@@ -198,7 +200,7 @@ const Header = ({type}) => {
 };
 
 Header.propTypes = {
-	type: PropTypes.string.isRequired,
+	type: PropTypes.string,
 }
 
 export default Header;
