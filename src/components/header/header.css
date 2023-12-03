@@ -1,0 +1,126 @@
+.header {
+  background-color: #003580;
+  color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  max-width: 1024px;
+  margin: 20px 0px 100px 0px;
+}
+
+.headerList {
+  display: flex;
+  gap: 40px;
+}
+
+.headerListItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.headerListItem.active {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.headerTitle {
+  font-weight: bold;
+}
+
+.headerDesc {
+  margin: 20px 0px;
+}
+
+.headerBtn {
+  background-color: #0071c2;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.headerSearch {
+  width: 100%;
+  max-width: 1024px;
+  height: max-content;
+  background-color: white;
+  border: 3px solid #febb02;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: lightgray;
+  padding: 10px 0px;
+  position: absolute;
+  bottom: -25px;
+  border-radius: 5px;
+  color: gray;
+}
+
+.headerIcon {
+  color: gray;
+}
+
+.headerSearchItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.headerSearchInput {
+  border: none;
+  outline: none;
+}
+
+.headerSearchText {
+  cursor: pointer;
+}
+
+.date {
+  position: absolute;
+  top: 55px;
+  box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+  -webkit-box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+  -moz-box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+} 
+
+.options {
+  position: absolute;
+  top: 55px;
+  width: 220px;
+  padding: 5px 10px;
+  font-size: 17px;
+  box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+  -webkit-box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+  -moz-box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+}
+
+.optionItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.optionCounter {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionCounterBtn {
+  padding: 0px 5px;
+  color: black;
+  height: 25px;
+  width: 30px;
+  font-size: 16px;  
+}
