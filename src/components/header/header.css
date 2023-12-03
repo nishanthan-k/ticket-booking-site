@@ -12,6 +12,10 @@
   margin: 20px 0px 100px 0px;
 }
 
+.headerContainer.showInListPage {
+  margin: 20px 0 20px 0;
+}
+
 .headerList {
   display: flex;
   gap: 40px;
@@ -22,7 +26,7 @@
   align-items: center;
   gap: 10px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .headerListItem.active {
@@ -123,4 +127,8 @@
   height: 25px;
   width: 30px;
   font-size: 16px;  
+}
+
+.optionCounterBtn:disabled {
+  cursor: not-allowed;
 }
