@@ -46,23 +46,23 @@ const Header = ({ type }) => {
 			<div className={type !== "showInListPage" ? "headerContainer" : "headerContainer showInListPage"}>
 				<div className="headerList">
 					<div className="headerListItem active">
-						<FontAwesomeIcon icon={faBed} />
+						<FontAwesomeIcon icon={faBed}  />
 						<span>Stays</span>
 					</div>
 					<div className="headerListItem">
-						<FontAwesomeIcon icon={faPlane} />
+						<FontAwesomeIcon icon={faPlane}  />
 						<span>Flights</span>
 					</div>
 					<div className="headerListItem">
-						<FontAwesomeIcon icon={faCar} />
+						<FontAwesomeIcon icon={faCar}  />
 						<span>Rental</span>
 					</div>
 					<div className="headerListItem">
-						<FontAwesomeIcon icon={faBed} />
+						<FontAwesomeIcon icon={faBed}  />
 						<span>Attractions</span>
 					</div>
 					<div className="headerListItem">
-						<FontAwesomeIcon icon={faTaxi} />
+						<FontAwesomeIcon icon={faTaxi}  />
 						<span>Airport Taxis</span>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ const Header = ({ type }) => {
 						<button className="headerBtn">Sign in / Register</button>
 						<div className="headerSearch">
 							<div className="headerSearchItem">
-								<FontAwesomeIcon icon={faBed} className="headerIcon" onClick={() => setOpenState(!openState)} />
+								<FontAwesomeIcon icon={faBed} className="headerIcon" />
 								<input
 									type="text"
 									placeholder="Where are you going?"
@@ -88,7 +88,7 @@ const Header = ({ type }) => {
 							<div className="headerSearchItem">
 								<FontAwesomeIcon
 									icon={faCalendarDays}
-									className="headerIcon"
+									className="headerIcon headerCalendarIcon"
 									onClick={() => setOpenState(!openState)}
 								/>
 								<span
@@ -112,8 +112,8 @@ const Header = ({ type }) => {
 							<div className="headerSearchItem">
 								<FontAwesomeIcon
 									icon={faPerson}
-									className="headerIcon"
-									onClick={() => setOpenState(!openState)}
+									className="headerIcon headerPersonIcon"
+									onClick={() => setOpenOption(!openOption)}
 								/>
 								<span
 									className="headerSearchText"

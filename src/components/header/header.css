@@ -73,6 +73,10 @@
   color: gray;
 }
 
+.headerCalendarIcon, .headerPersonIcon {
+  cursor: pointer;
+}
+
 .headerSearchItem {
   display: flex;
   align-items: center;

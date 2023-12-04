@@ -1,4 +1,4 @@
-.featured {
+.featuredPlaces {
   width: 100%;
   max-width: 1024px;
   display: flex;
@@ -7,7 +7,7 @@
   z-index: 1;
 }
 
-.featuredItem {
+.featuredPlacesItem {
   height: 250px;
   position: relative;
   color: white;
@@ -15,12 +15,12 @@
   border-radius: 20px;
 }
 
-.featuredImg {
+.featuredPlacesImg {
   width: 100%;
   object-fit: cover;
 }
 
-.featuredTitle {
+.featuredPlacesTitle {
   position: absolute;
   bottom: 20px;
   left: 20px;
