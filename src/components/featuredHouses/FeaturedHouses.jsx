@@ -10,27 +10,43 @@ const FeaturedHouses = () => {
       <div className="featuredHousesList">
         <div className="featuredHousesListItem">
           <img src={AparthotelStareMiasto} alt="AparthotelStareMiasto" className="featuredHousesImg" />
-          <span className="featuredHouseName">Aparthotel Stare Miasto</span>
-          <span className="featuredHouseCity">Madrid</span>
-          <span className="featuredHousePrice">Starting from $120</span>
+          <span className="featuredHousesName">Aparthotel Stare Miasto</span>
+          <span className="featuredHousesCity">Madrid</span>
+          <span className="featuredHousesPrice">Starting from $120</span>
+          <div className="featuredHousesRatings">
+            <button>8.9</button>
+            <span>Excellent</span>
+          </div>
         </div>
         <div className="featuredHousesListItem">
           <img src={ComfortSuitesAirport} alt="ComfortSuitesAirport" className="featuredHousesImg" />
-          <span className="featuredHouseName">Aparthotel Stare Miasto</span>
-          <span className="featuredHouseCity">Madrid</span>
-          <span className="featuredHousePrice">Starting from $120</span>
+          <span className="featuredHousesName">Aparthotel Stare Miasto</span>
+          <span className="featuredHousesCity">Madrid</span>
+          <span className="featuredHousesPrice">Starting from $120</span>
+          <div className="featuredHousesRatings">
+            <button>8.9</button>
+            <span>Excellent</span>
+          </div>
         </div>
         <div className="featuredHousesListItem">
           <img src={FourSeasonsHotel} alt="FourSeasonsHotel" className="featuredHousesImg" />
-          <span className="featuredHouseName">Aparthotel Stare Miasto</span>
-          <span className="featuredHouseCity">Madrid</span>
-          <span className="featuredHousePrice">Starting from $120</span>
+          <span className="featuredHousesName">Aparthotel Stare Miasto</span>
+          <span className="featuredHousesCity">Madrid</span>
+          <span className="featuredHousesPrice">Starting from $120</span>
+          <div className="featuredHousesRatings">
+            <button>8.9</button>
+            <span>Excellent</span>
+          </div>
         </div>
         <div className="featuredHousesListItem">
           <img src={HilteonGardenInn} alt="HilteonGardenInn" className="featuredHousesImg" />
-          <span className="featuredHouseName">Aparthotel Stare Miasto</span>
-          <span className="featuredHouseCity">Madrid</span>
-          <span className="featuredHousePrice">Starting from $120</span>
+          <span className="featuredHousesName">Aparthotel Stare Miasto</span>
+          <span className="featuredHousesCity">Madrid</span>
+          <span className="featuredHousesPrice">Starting from $120</span>
+          <div className="featuredHousesRatings">
+            <button>8.9</button>
+            <span>Excellent</span>
+          </div>
         </div>
       </div>
     </div>
