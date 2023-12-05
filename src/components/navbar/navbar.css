@@ -26,3 +26,10 @@
   cursor: pointer;
   color: #003580;
 }
+
+.navButton:active {
+  transform: scale(0.95);
+  transform: translateY(2px);
+  border-radius: 3px;
+  box-shadow: 2px 2px 2px 2px 0071c2;
+}

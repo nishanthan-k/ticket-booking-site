@@ -1,0 +1,36 @@
+.subscribe {
+  width: 100%;
+  padding: 50px 0px;
+  background-color: #003580;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.subscribeInput, .subscribeBtn {
+  height: 2rem;
+  padding: 3px 6px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribeInput {
+  width: 15rem;
+}
+
+.subscribeBtn {
+  background-color: #0071c2;
+  border: none;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.subscribeInputContainer {
+  display: flex;
+  gap: 10px;
+}

@@ -20,6 +20,11 @@
   object-fit: cover;
 }
 
+.featuredPlacesImg:hover {
+  transform: scale(1.3);
+  transition: .3s;
+}
+
 .featuredPlacesTitle {
   position: absolute;
   bottom: 20px;

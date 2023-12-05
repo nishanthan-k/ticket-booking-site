@@ -14,10 +14,12 @@ import "./header.css";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import PropTypes from "prop-types"
+import { useNavigate } from "react-router";
 
 const Header = ({ type }) => {
 	const [openState, setOpenState] = useState(false);
 	const [openOption, setOpenOption] = useState(false);
+	const [destination, setDestination] = useState(false);
 
 	const [date, setDate] = useState([
 		{
@@ -40,6 +42,11 @@ const Header = ({ type }) => {
 			};
 		});
 	};
+
+	const navigate = useNavigate();
+	const handleSearch = () => {
+		navigate("/search", {state: {destination, date, options}})
+	}
 
 	return (
 		<div className="header">
@@ -73,7 +80,7 @@ const Header = ({ type }) => {
 						</h1>
 						<p className="headerDesc">
 							Get rewarded for your travels – unlock instant savings of
-							10% or more with a free Lamabooking account
+							10% or more with a free BookingTomb account
 						</p>
 						<button className="headerBtn">Sign in / Register</button>
 						<div className="headerSearch">
@@ -83,6 +90,7 @@ const Header = ({ type }) => {
 									type="text"
 									placeholder="Where are you going?"
 									className="headerSearchInput"
+									onChange={e => setDestination(e.target.value)}
 								/>
 							</div>
 							<div className="headerSearchItem">
@@ -189,7 +197,7 @@ const Header = ({ type }) => {
 									</div>
 								)}
 							</div>
-							<div className="headerSearchItem">
+							<div className="headerSearchItem" onClick={handleSearch}>
 								<button className="headerBtn">Search</button>
 							</div>
 						</div>
