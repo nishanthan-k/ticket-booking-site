@@ -1,6 +1,6 @@
 .subscribe {
   width: 100%;
-  padding: 50px 0px;
+  padding: 5rem 0px;
   background-color: #003580;
   color: white;
   display: flex;
@@ -8,11 +8,13 @@
   justify-content: space-around;
   align-items: center;
   gap: 20px;
+  font-size: 16px;
 }
 
 .subscribeInput, .subscribeBtn {
-  height: 2rem;
-  padding: 3px 6px;
+  height: 2.5rem;
+  padding: 4px 6px;
+  font-size: 16px;
   outline: none;
   border: none;
   border-radius: 5px;

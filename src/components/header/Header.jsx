@@ -19,7 +19,7 @@ import { useNavigate } from "react-router";
 const Header = ({ type }) => {
 	const [openState, setOpenState] = useState(false);
 	const [openOption, setOpenOption] = useState(false);
-	const [destination, setDestination] = useState(false);
+	const [destination, setDestination] = useState("Not Decided?");
 
 	const [date, setDate] = useState([
 		{
@@ -111,6 +111,7 @@ const Header = ({ type }) => {
 									<DateRange
 										editableDateInputs={true}
 										onChange={(item) => setDate([item.selection])}
+										minDate={new Date()}
 										moveRangeOnFirstSelection={false}
 										ranges={date}
 										className="date"

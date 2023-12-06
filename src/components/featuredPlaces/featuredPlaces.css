@@ -22,7 +22,7 @@
 
 .featuredPlacesImg:hover {
   transform: scale(1.3);
-  transition: .3s;
+  transition: .7s;
 }
 
 .featuredPlacesTitle {

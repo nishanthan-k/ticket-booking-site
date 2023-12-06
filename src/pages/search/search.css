@@ -1,0 +1,122 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: .5rem;
+  margin-bottom: 5rem;
+}
+
+.searchWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  gap: 20px;
+}
+
+.sTitle {
+  font-size: 26px;
+}
+
+.searchResult {
+  flex: 4;
+}
+
+.searchList {
+  height: max-content;
+  flex: 1.2;
+  background-color: #febb02;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  position: sticky;
+  top: 10px;
+}
+
+.sItem {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sItem > label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sItem > input {
+  outline: none;
+  border: none;
+}
+
+.sItem > input, .sItem > span {
+  height: 2.5rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 5px 3px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sDateOption {
+  position: relative;
+}
+
+.sCalendar {
+  position: absolute;
+  top: 4.5rem;
+  box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+  -webkit-box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+  -moz-box-shadow: 4px 3px 15px 3px rgba(138, 130, 130, 1);
+  z-index: 2;
+}
+
+.optionsTextLight {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.sOptionsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0px 5px;
+}
+
+.sOptionsItem > span {
+  margin-right: 10px;
+}
+
+.sOptionsItem > input {
+  width: 35%;
+  padding: 5px;
+  border: none;
+  outline: 0;
+}
+
+.searchBtn {
+  align-self: center;
+  width: 70%;
+  height: 2.5rem;
+  background-color: #0071c2;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.searchBtn:hover {
+  border:1px ridge #003580;
+}

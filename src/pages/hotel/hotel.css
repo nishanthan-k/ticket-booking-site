@@ -1,0 +1,169 @@
+.hotelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hotelWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.bookNowBtn {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.hotelTitle {
+  font-size: 26px;
+}
+
+.hotelAddress {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hotelDistance {
+  font-size: 16px;
+  color: #0071c2;
+}
+
+.highPriceHighlight {
+  font-size: 18px;
+  color: #008009;
+  font-weight: 600;
+}
+
+.hotelImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hotelImageWrapper {
+  width: 33%;
+}
+
+.hotelImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.hotelDetails {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.hotelDetailsTexts {
+  flex: 3;
+}
+
+.hotelDesc {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.hotelDetailsPrice {
+  flex: 1;
+  background-color: #ebf3ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotelDetailsPrice>h1 {
+  font-size: 20px;
+  color: #555;
+}
+
+.hotelDetailsPrice>span {
+  font-size: 16px;
+}
+
+.hotelDetailsPrice>h2 {
+  font-size: 18px;
+}
+
+.hotelDetailsPrice>button {
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.sliderContainer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.426);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.sliderWrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+
+.sliderImg {
+  width: 80%;
+  height: 90%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.sliderCloseBtn {
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  font-size: 2rem;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.sliderLeftBtn {
+  position: absolute;
+  left: 4rem;
+  font-size: 2rem;
+  color: lightgray;
+  cursor: pointer;
+}
+
+.sliderRightBtn {
+  position: absolute;
+  right: 4rem;
+  font-size: 2rem;
+  color: lightgray;
+  cursor: pointer;
+}

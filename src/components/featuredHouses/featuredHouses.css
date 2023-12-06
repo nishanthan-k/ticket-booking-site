@@ -20,6 +20,10 @@
   height: 150px;
 }
 
+.featuredHousesImg:hover {
+  border: 2px solid black;
+}
+
 .featuredHousesListItem {
   flex: 1;
   display: flex;
