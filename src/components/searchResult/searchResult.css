@@ -133,3 +133,25 @@
     text-align: left;
   }
 }
+
+@media screen and (max-width: 900px){
+  .siRating {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .siRating > button {
+    width: max-content;
+  }
+
+  .siDetails {
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 0rem;
+  }
+
+  .siDetailTexts {
+    text-align: left;
+  }
+}

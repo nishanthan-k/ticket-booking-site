@@ -20,3 +20,14 @@
     color: black;
   }
 }
+
+@media screen and (max-width: 900px){
+  .homeContainer {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+
+  .homeTitle {
+    width: 100%;
+  }
+}

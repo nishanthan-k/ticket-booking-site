@@ -238,3 +238,32 @@
     right: 2rem;
   }
 }
+
+@media screen and (max-width: 900px){
+  .hotelContainer {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+
+  .sliderContainer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .sliderImg {
+    height: 50%;
+  }
+
+  .sliderCloseBtn {
+    top: 11rem;
+  }
+
+  .sliderLeftBtn {
+    left: 2rem;
+  }
+
+  .sliderRightBtn {
+    right: 2rem;
+  }
+}

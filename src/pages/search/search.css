@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   margin-top: .5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .searchWrapper {
@@ -128,7 +128,7 @@
     padding: 0 .5rem;
     overflow: hidden;
   }
-
+  
   .searchContainer {
     width: 100%;
     margin-bottom: 1rem;
@@ -186,5 +186,16 @@
 
   .searchBtn:hover {
     border: none;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .search {
+    width: 100vw;
+    padding: 0 .5rem;
+  }
+
+  .searchContainer {
+    margin-bottom: 1rem;
   }
 }

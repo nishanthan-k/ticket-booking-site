@@ -185,3 +185,14 @@
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 900px){
+  .header {
+    width: 100vw;
+    padding: 0 .5rem;
+  }
+
+  .headerSearch {
+    width: 97.5%;
+  }
+}

@@ -48,3 +48,10 @@
     font-weight: bold;
   }
 }
+
+@media screen and (max-width: 900px){
+  .navbar {
+    width: 100vw;
+    padding: 0 1rem;
+  }
+}
