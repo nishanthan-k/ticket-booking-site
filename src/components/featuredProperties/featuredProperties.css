@@ -8,7 +8,6 @@
 
 .featuredPropertiesItem {
   flex: 1;
-  border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
 }
@@ -17,6 +16,7 @@
   width: 100%;
   height: 150px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .featuredPropertiesImg:hover {
@@ -24,11 +24,48 @@
   border-radius: 10px;
 }
 
-.featuredPropertiesTitle > h1 {
+.featuredPropertiesTitle>h1 {
   font-size: 18px;
 }
 
-.featuredPropertiesTitle > h2 {
+.featuredPropertiesTitle>h2 {
   font-size: 14px;
   font-weight: 300;
+}
+
+@media screen and (max-width: 420px) {
+  .featuredProperties {
+    width: 100%;
+    height: max-content;
+    padding: 0 .5rem;
+    gap: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .featuredPropertiesItem {
+    flex: 0 0 45%; /* giving 50% width to each flex box */
+    width: 50%;
+  }
+
+  .featuredPropertiesImg {
+    width: 100%; 
+    height: 7rem; 
+  }
+
+  .featuredPropertiesImg:hover {
+    border: none;
+    border-radius: 0px;
+  }
+
+  .featuredPropertiesTitle>h1 {
+    font-size: 14px;
+    padding-left: .3rem;
+  }
+  
+  .featuredPropertiesTitle>h2 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: .3rem;
+  }
 }

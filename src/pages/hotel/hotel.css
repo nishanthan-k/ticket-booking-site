@@ -167,3 +167,74 @@
   color: lightgray;
   cursor: pointer;
 }
+
+@media screen and (max-width: 420px){
+  .hotelContainer {
+    width: 100%;
+    padding: 0 .5rem;
+  }
+
+  .bookNowBtn {
+    top: .3rem;
+    padding: 10px 10px;
+    font-size: 12px;
+  }
+
+  .hotelTitle {
+    font-size: 21px;
+  }
+
+  .hotelAddress > span {
+    font-size: 13px;
+  }
+
+  .hotelDistance {
+    font-size: 14px;
+  }
+
+  .highPriceHighlight {
+    font-size: 14px;
+  }
+
+  .hotelImg {
+    width: 6.5rem;
+    height: 6rem;
+  }
+
+  .hotelDetails {
+    flex-direction: column;
+  }
+
+  .hotelDesc {
+    font-size: 14px;
+  }
+
+  .hotelDetailsPrice > span {
+    font-size: 14px;
+  }
+
+  .sliderImg {
+    width: 90%;
+    height: 40%;
+  }
+
+  .sliderContainer {
+    position: fixed;
+  }
+
+  .sliderLeftBtn {
+    color: gray;
+    left: 1.5rem;
+  }
+
+  .sliderRightBtn {
+    color: gray;
+    right: 1.5rem;
+  }
+
+  .sliderCloseBtn {
+    color: rgb(53, 52, 52);
+    top: 12rem;
+    right: 2rem;
+  }
+}

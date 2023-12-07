@@ -10,3 +10,13 @@
   width: 1024px;
   font-size: 20px;
 }
+
+@media screen and (max-width: 420px){
+  .homeTitle {
+    padding: 0 .5rem;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+}

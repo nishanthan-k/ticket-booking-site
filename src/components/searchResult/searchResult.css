@@ -108,3 +108,28 @@
   padding: 10px 5px;
   cursor: pointer;
 }
+
+@media screen and (max-width: 420px){
+  .searchItem {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .siImg {
+    max-width: 100%;
+  }
+
+  .siDetails {
+    gap: .5rem;
+  }
+
+  .siRating {
+    align-self: flex-start;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .siDetailTexts {
+    text-align: left;
+  }
+}

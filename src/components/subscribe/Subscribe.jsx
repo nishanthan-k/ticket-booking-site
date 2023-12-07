@@ -12,7 +12,7 @@ const Subscribe = () => {
 					type="text"
 					name="subscribeInput"
 					id="subscribeInput"
-					placeholder="Your subscribe"
+					placeholder="Your Email"
 					className="subscribeInput"
 				/>
 				<button className="subscribeBtn">Subscribe</button>

@@ -32,44 +32,46 @@ const Search = () => {
 					<div className="searchWrapper">
 						<div className="searchList">
 							<h1 className="sTitle">Search</h1>
-							<div className="sItem">
-								<label>Destination</label>
-								<input
-									type="text"
-									name="sDestination"
-									id="sDestination"
-									className="sDest sText"
-									placeholder={destination}
-									// value={destination}
-									onChange={(e) =>
-										setDestination(e.target.value)
-									}
-								/>
-							</div>
-							<div className="sItem sDateOption">
-								<label>Check-In Date</label>
-								<span
-									className="sDate sText"
-									onClick={() => setOpenDate(!openDate)}
-								>
-									{`
+							<span className="searchDestDate">
+								<div className="sItem">
+									<label>Destination</label>
+									<input
+										type="text"
+										name="sDestination"
+										id="sDestination"
+										className="sDest sText"
+										placeholder={destination}
+										// value={destination}
+										onChange={(e) =>
+											setDestination(e.target.value)
+										}
+									/>
+								</div>
+								<div className="sItem sDateOption">
+									<label>Check-In Date</label>
+									<span
+										className="sDate sText"
+										onClick={() => setOpenDate(!openDate)}
+									>
+										{`
                     ${format(date[0].startDate, "dd-MM-yyyy")}
                     to
                     ${format(date[0].endDate, "dd-MM-yyyy")}
                   `}
-								</span>
-								{openDate && (
-									<DateRange
-										onChange={(item) =>
-											setDate([item.selection])
-										}
-										minDate={new Date()}
-										ranges={date}
-										moveRangeOnFirstSelection={false}
-										className="sCalendar"
-									/>
-								)}
-							</div>
+									</span>
+									{openDate && (
+										<DateRange
+											onChange={(item) =>
+												setDate([item.selection])
+											}
+											minDate={new Date()}
+											ranges={date}
+											moveRangeOnFirstSelection={false}
+											className="sCalendar"
+										/>
+									)}
+								</div>
+							</span>
 							<div className="sItem">
 								<label>Options</label>
 								<div className="sOptionsList">

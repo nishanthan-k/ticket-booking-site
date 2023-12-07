@@ -4,6 +4,7 @@ import ApartmentsImg from "../../assets/images/properties/apartments.jpg";
 import CabinsImg from "../../assets/images/properties/cabins.jpg";
 import ResortsImg from "../../assets/images/properties/resorts.jpg";
 import VillasImg from "../../assets/images/properties/villas.jpg";
+import BoatHouseImg from "../../assets/images/properties/boat house.jpg";
 
 const FeaturedProperties = () => {
 	return (
@@ -45,6 +46,13 @@ const FeaturedProperties = () => {
 				<div className="featuredPropertiesTitle">
 					<h1>Villas</h1>
 					<h2>176 villas</h2>
+				</div>
+			</div>
+			<div className="featuredPropertiesItem">
+				<img src={BoatHouseImg} alt="BoatHouseImg" className="featuredPropertiesImg" />
+				<div className="featuredPropertiesTitle">
+					<h1>Boat House</h1>
+					<h2>40 boat houses</h2>
 				</div>
 			</div>
 		</div>

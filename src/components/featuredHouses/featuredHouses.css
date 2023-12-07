@@ -14,6 +14,14 @@
   justify-content: space-between;
 }
 
+.featuredHousesListItem {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 .featuredHousesImg {
   width: 100%;
   border-radius: 10px;
@@ -24,18 +32,12 @@
   border: 2px solid black;
 }
 
-.featuredHousesListItem {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}   
-
 .featuredHousesName {
   font-weight: bold;
 }
 
 .featuredHousesCity {
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -43,7 +45,7 @@
   font-weight: 500;
 }
 
-.featuredHousesRatings > button {
+.featuredHousesRatings>button {
   background-color: #003580;
   color: white;
   font-weight: bold;
@@ -52,6 +54,43 @@
   margin-right: 10px;
 }
 
-.featuredHousesRatings > span {
+.featuredHousesRatings>span {
   font-size: 14px;
+}
+
+@media screen and (max-width: 420px) {
+  .featuredHouses {
+    padding: 0 .5rem;
+    width: 100vw;
+    max-width: 100vw;
+  }
+
+  .featuredHousesList {
+    flex-wrap: wrap;
+  }
+
+  .featuredHousesListItem {
+    flex: 0 0 45%;
+    width: 100%;
+  }
+
+  .featuredHousesImg:hover {
+    border: none;
+  }
+
+  .featuredHousesName {
+    font-size: 14px;
+  }
+
+  .featuredHousesCity {
+    font-size: 12px;
+  }
+
+  .featuredHousesPrice {
+    font-size: 12px;
+  }
+
+  .featuredHousesRatings>span {
+    font-size: 13px;
+  }
 }

@@ -22,12 +22,14 @@
 
 .subscribeInput {
   width: 15rem;
+  font-size: 14px;
 }
 
 .subscribeBtn {
   background-color: #0071c2;
   border: none;
   color: white;
+  font-size: 14px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -35,4 +37,30 @@
 .subscribeInputContainer {
   display: flex;
   gap: 10px;
+}
+
+@media screen and (max-width: 420px){
+  .subscribe {
+    width: 100vw;
+  }
+
+  .subscribeTitle {
+    font-size: 22px;
+  }
+
+  .subscribeDesc {
+    font-size: 12px;
+  }
+
+  .subscribeInput {
+    width: 10rem;
+    height: 2rem;
+    font-size: 12px;
+  }
+  
+  .subscribeBtn{
+    width: 5rem;
+    height: 2rem;
+    font-size: 12px;
+  }
 }

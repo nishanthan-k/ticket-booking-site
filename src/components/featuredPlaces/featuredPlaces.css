@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1024px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 10px;
   z-index: 1;
 }
@@ -12,12 +12,13 @@
   position: relative;
   color: white;
   overflow: hidden;
-  border-radius: 20px;
 }
 
 .featuredPlacesImg {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .featuredPlacesImg:hover {
@@ -29,4 +30,32 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .featuredPlaces {
+    margin-top: 4.9rem;
+    padding: 0 .5rem;
+  }
+
+  .featuredPlacesItem {
+    height: max-content;
+  }
+
+  .featuredPlacesImg {
+    width: 6.5rem;
+    height: 7rem;
+    object-fit: cover;
+  }
+
+  .featuredPlacesImg:hover {
+    transform: scale(1);
+  }
+
+  .featuredPlacesTitle {
+    color: rgb(252, 250, 250);
+    font-size: .35rem;
+    bottom: 1rem;
+    left: .5rem; 
+  }
 }

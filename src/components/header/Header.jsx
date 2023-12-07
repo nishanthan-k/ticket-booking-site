@@ -48,6 +48,8 @@ const Header = ({ type }) => {
 		navigate("/search", {state: {destination, date, options}})
 	}
 
+	
+
 	return (
 		<div className="header">
 			<div className={type !== "showInListPage" ? "headerContainer" : "headerContainer showInListPage"}>

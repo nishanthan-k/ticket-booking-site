@@ -46,17 +46,18 @@
   gap: 5px;
 }
 
-.sItem > label {
+.sItem>label {
   font-size: 18px;
   font-weight: 500;
 }
 
-.sItem > input {
+.sItem>input {
   outline: none;
   border: none;
 }
 
-.sItem > input, .sItem > span {
+.sItem>input,
+.sItem>span {
   height: 2.5rem;
   background-color: white;
   display: flex;
@@ -93,11 +94,11 @@
   padding: 0px 5px;
 }
 
-.sOptionsItem > span {
+.sOptionsItem>span {
   margin-right: 10px;
 }
 
-.sOptionsItem > input {
+.sOptionsItem>input {
   width: 35%;
   padding: 5px;
   border: none;
@@ -118,5 +119,72 @@
 }
 
 .searchBtn:hover {
-  border:1px ridge #003580;
+  border: 1px ridge #003580;
+}
+
+@media screen and (max-width: 420px) {
+  .search {
+    width: 100vw;
+    padding: 0 .5rem;
+    overflow: hidden;
+  }
+
+  .searchContainer {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .searchWrapper {
+    flex-direction: column;
+  }
+
+  .searchList {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .searchDestDate {
+    display: flex;
+    gap: 20px;
+  }
+
+  .sTitle {
+    width: 100%;
+  }
+
+  .sItem {
+    width: max-content;
+  }
+
+  .sItem>label {
+    font-size: 15px;
+  }
+
+  .sItem>input,
+  .sItem>span {
+    height: 2rem;
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .sCalendar {
+    left: -.3rem;
+  }
+
+  .sOptionsItem>p,
+  .sOptionsItem>span {
+    font-size: 14px;
+  }
+
+  .optionsTextLight {
+    font-size: 12px;
+  }
+
+  .searchBtn {
+    width: 100%;
+  }
+
+  .searchBtn:hover {
+    border: none;
+  }
 }

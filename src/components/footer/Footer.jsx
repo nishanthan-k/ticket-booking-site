@@ -27,12 +27,12 @@ const Footer = () => {
           <li className="fListItem">Travel communities </li>
           <li className="fListItem">Seasonal and holiday deals </li>
         </ul>
-        <ul className="fList">
+        {/* <ul className="fList">
           <li className="fListItem">Car rental </li>
           <li className="fListItem">Flight Finder</li>
           <li className="fListItem">Restaurant reservations </li>
           <li className="fListItem">Travel Agents </li>
-        </ul>
+        </ul> */}
         <ul className="fList">
           <li className="fListItem">Curtomer Service</li>
           <li className="fListItem">Partner Help</li>
