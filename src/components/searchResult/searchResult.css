@@ -109,7 +109,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 520px){
   .searchItem {
     width: 100%;
     flex-direction: column;

@@ -11,7 +11,7 @@
   font-size: 20px;
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 520px){
   .homeTitle {
     padding: 0 .5rem;
     width: 100%;
